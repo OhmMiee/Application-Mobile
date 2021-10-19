@@ -15,8 +15,9 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   final List<String> imageList = [
-    "https://images.unsplash.com/photo-1593642702909-dec73df255d7?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1469&q=80",
-    "https://images.unsplash.com/photo-1593642634402-b0eb5e2eebc9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60"
+    "assets/images/banner.jpg",
+    "assets/images/1.jpg",
+    "assets/images/2.jpg"
   ];
 
   @override
@@ -40,28 +41,47 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
             ),
           ),
-        CarouselSlider(
-          items: imageList.map((e) => ClipRRect(
-            borderRadius: BorderRadius.circular(20.0),
-            child: Stack(
-              fit: StackFit.expand,
-              children: <Widget>[
-                Image.network(e,
-                fit: BoxFit.cover,)
-              ],
-            )
-          )).toList(), 
-          options: CarouselOptions(
-            enlargeCenterPage: true,
-            enableInfiniteScroll: false,
-            autoPlay: true))
+          CarouselSlider(
+              items: imageList
+                  .map((e) => Container(
+                        decoration: BoxDecoration(
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.withOpacity(0.8),
+                              spreadRadius: 1,
+                              blurRadius: 7,
+                              offset:
+                                  Offset(0, 0), // changes position of shadow
+                            ),
+
+                          ],
+                            borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        child: ClipRRect(
+                            borderRadius: BorderRadius.circular(20.0),
+                            child: Stack(
+                              fit: StackFit.expand,
+                              children: <Widget>[
+                                Image.asset(
+                                  e,
+                                  fit: BoxFit.cover,
+                                ),
+                              ],
+                            )),
+                      ))
+                  .toList(),
+              options: CarouselOptions(
+                height: 170,
+                enlargeCenterPage: true,
+                enableInfiniteScroll: false,
+                autoPlay: true,
+              ))
           // ClipRRect(
           //   borderRadius: BorderRadius.circular(26.0),
           //   child: Image.asset("assets/images/banner.jpg",),
           // )
         ],
       ),
-      
     );
   }
 }
