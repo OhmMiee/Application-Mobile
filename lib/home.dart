@@ -15,9 +15,8 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   final List<String> imageList = [
-    "assets/images/banner.jpg",
-    "assets/images/1.jpg",
-    "assets/images/2.jpg"
+    "assets/images/banner_1.jpg",
+    "assets/images/banner_2.jpg",
   ];
 
   @override
