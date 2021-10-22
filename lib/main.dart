@@ -1,3 +1,5 @@
+// import 'package:final_project/Category.dart';
+import 'package:final_project/homepage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,18 +12,12 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: Center(
-
-          child: Image.asset("assets/images/1.jpg"),
-        
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
         ),
-      ),
-
-      // home: const MyHomePage(title: 'Flutter Demo Home Page'),
-    );
+        home: homepage());
   }
 }
