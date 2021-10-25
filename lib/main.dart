@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.amber,
@@ -33,26 +34,88 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
+    // return Scaffold(
+    //   appBar: AppBar(
+    //     title: Text(widget.title),
+    //   ),
+    //   body: Center(
+    //     child: Column(
+    //       mainAxisAlignment: MainAxisAlignment.center,
+    //       children: <Widget>[
+    //         TextButton(
+    //           style: ButtonStyle(
+    //             foregroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+    //           ),
+    //           onPressed: () {
+    //             Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeScreen()),);
+    //           },
+    //           child: Text('TextButton'),
+    //         )
+    //       ],
+    //     ),
+    //   ), // This trailing comma makes auto-formatting nicer for build methods.
+    // );
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            TextButton(
-              style: ButtonStyle(
-                foregroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+      body: Stack(
+        children: <Widget>[
+          Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("assets/images/welcome.jpg"),
+                fit: BoxFit.cover,
               ),
-              onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeScreen()),);
-              },
-              child: Text('TextButton'),
-            )
-          ],
-        ),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
-    );
+            ),
+          ),
+//ข้อความ Phayao Cafe
+          Padding(
+            padding: EdgeInsets.only(top: 100),
+            child: Align(
+              alignment: Alignment.topCenter,
+              child: Text(
+                "Phayao Cafe",
+                style: TextStyle(
+                    fontSize: 40,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                    decoration: TextDecoration.combine(
+                      [TextDecoration.underline, TextDecoration.overline],
+                    ),
+                    shadows: [
+                      Shadow(
+                          color: Colors.white,
+                          blurRadius: 2.0,
+                          offset: Offset(4, 1)),
+                    ]),
+              ),
+            ),
+          ),
+
+          //Bottom
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Align(
+              alignment: Alignment.center,
+              child: ElevatedButton.icon(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) {
+                      return HomeScreen();
+                    }),
+                  );
+                  Color:
+                  Colors.black;
+                },
+                icon: Icon(Icons.open_in_new_rounded),
+                label: Text(
+                  "Welcome",
+                  style: TextStyle(fontSize: 20),
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),);
   }
 }
+
