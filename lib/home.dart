@@ -3,18 +3,22 @@
 
 import 'package:final_project/main.dart';
 import 'package:flutter/material.dart';
-import 'package:hexcolor/hexcolor.dart';
 import 'constant.dart';
+import 'detail.dart';
+import 'category.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
+
 
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+    
+
 
   Widget _textformField() {
     return Padding(
@@ -42,13 +46,12 @@ class _HomeScreenState extends State<HomeScreen> {
     required String tittle,
   }) {
     return InkWell(
-        onTap: () async {
-          await Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => MyApp(),
-            ),
-          );
+        onTap: () {Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Details(),
+                ),
+              );
         },
         child: Column(mainAxisSize: MainAxisSize.max, children: [
           Container(
@@ -104,32 +107,41 @@ class _HomeScreenState extends State<HomeScreen> {
     required String image,
     required String tittle,
   }) {
-    return Container(
-      height: 130,
-      margin: EdgeInsets.symmetric(horizontal: 25),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          Container(
-            height: 70,
-            width: 70,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                fit: BoxFit.cover,
-                image: AssetImage(image),
+    return InkWell(
+        onTap: () async {
+          await Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => Details(),
+            ),
+          );
+        },
+        child: Container(
+          height: 130,
+          margin: EdgeInsets.symmetric(horizontal: 25),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Container(
+                height: 70,
+                width: 70,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    fit: BoxFit.cover,
+                    image: AssetImage(image),
+                  ),
+                  shape: BoxShape.circle,
+                ),
               ),
-              shape: BoxShape.circle,
-            ),
+              Text(
+                tittle,
+                style: TextStyle(
+                  fontSize: 18,
+                ),
+              ),
+            ],
           ),
-          Text(
-            tittle,
-            style: TextStyle(
-              fontSize: 18,
-            ),
-          ),
-        ],
-      ),
-    );
+        ));
   }
 
   final List<String> imageList = [
@@ -147,8 +159,8 @@ class _HomeScreenState extends State<HomeScreen> {
               // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(
-                      top: 70.0, left: 20.0, right: 20.0),
+                  padding:
+                      const EdgeInsets.only(top: 70.0, left: 20.0, right: 20.0),
                   child: Row(
                     children: [
                       Text(
@@ -255,9 +267,11 @@ class _HomeScreenState extends State<HomeScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       _menu(
-                          image: "assets/images/menu1.jpg", tittle: "Heefjadsjf"),
+                          image: "assets/images/menu1.jpg",
+                          tittle: "Heefjadsjf"),
                       _menu(
-                          image: "assets/images/menu1.jpg", tittle: "Heefjadsjf"),
+                          image: "assets/images/menu1.jpg",
+                          tittle: "Heefjadsjf"),
                     ],
                   ),
                 )

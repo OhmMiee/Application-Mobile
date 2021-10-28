@@ -10,3 +10,4 @@ Color grayColor = HexColor("#585858");
 Color whiteColor = HexColor("#ffffff");
 
 
+const title1 = 28;
