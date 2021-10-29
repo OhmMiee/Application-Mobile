@@ -92,7 +92,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Text(
                   tittle,
                   textAlign: TextAlign.start,
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 18),
                   // style: FlutterFlowTheme.bodyText1.override(
                   //   fontFamily: 'Poppins',
                   // ),
@@ -112,7 +112,7 @@ class _HomeScreenState extends State<HomeScreen> {
           await Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => Details(),
+              builder: (context) => CategoryPage(),
             ),
           );
         },
