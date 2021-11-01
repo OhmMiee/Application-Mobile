@@ -1,3 +1,4 @@
+import 'package:final_project/detail.dart';
 import 'package:final_project/home.dart';
 import 'package:flutter/material.dart';
 
@@ -115,7 +116,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
         ],
-      ),);
+      ),
+    );
   }
 }
-

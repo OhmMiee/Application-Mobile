@@ -1,18 +1,21 @@
 import 'package:final_project/home.dart';
 import 'package:flutter/material.dart';
 
+
 class Details extends StatelessWidget {
   const Details({Key? key}) : super(key: key);
 
+
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(backgroundColor: Color(0xFF262D34), body: Information());
   }
 }
 
+
 class Information extends StatelessWidget {
   const Information({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -62,7 +65,7 @@ class Information extends StatelessWidget {
                               child: Align(
                                 alignment: AlignmentDirectional(-1, 0),
                                 child: Text(
-                                  'Welcome Back',
+                                  'Title',
                                   style: TextStyle(
                                       fontSize: 28,
                                       fontWeight: FontWeight.bold),
