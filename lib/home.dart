@@ -231,23 +231,17 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Row(
                     children: [
                       _allCategories(
-                          image: 'assets/images/latte.png',
+                          image: 'assets/images/c_1.jpg',
+                          tittle: 'อาหาร'),
+                      _allCategories(
+                          image: 'assets/images/c_2.jpg',
                           tittle: 'เครื่องดื่ม'),
                       _allCategories(
-                          image: 'assets/images/latte.png',
-                          tittle: 'เครื่องดื่ม'),
+                          image: 'assets/images/c_3.jpg',
+                          tittle: 'ของว่าง'),
                       _allCategories(
-                          image: 'assets/images/latte.png',
-                          tittle: 'เครื่องดื่ม'),
-                      _allCategories(
-                          image: 'assets/images/latte.png',
-                          tittle: 'เครื่องดื่ม'),
-                      _allCategories(
-                          image: 'assets/images/latte.png',
-                          tittle: 'เครื่องดื่ม'),
-                      _allCategories(
-                          image: 'assets/images/latte.png',
-                          tittle: 'เครื่องดื่ม'),
+                          image: 'assets/images/c_4.jpg',
+                          tittle: 'ของหวาน'),
                     ],
                   ),
                 ),
@@ -268,10 +262,10 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: [
                       _menu(
                           image: "assets/images/menu1.jpg",
-                          tittle: "Heefjadsjf"),
+                          tittle: "Title"),
                       _menu(
                           image: "assets/images/menu1.jpg",
-                          tittle: "Heefjadsjf"),
+                          tittle: "Title"),
                     ],
                   ),
                 )
