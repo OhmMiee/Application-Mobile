@@ -1,16 +1,37 @@
-# final_project
+รายชื่อสมาชิกกลุ่ม 
+1. 61020593 นายจีระพันธ์ บุญสิน
+2. 61020627 นายเดชสวัสดิ์ นกพึ่ง
+3. 61020650 นายนพรัตน์ เวียงวุธ
+4. 61020784 นายศรัณย์ ใจดี
 
-A new Flutter project.
 
-## Getting Started
+หน้าแรก 
+![image](https://user-images.githubusercontent.com/41279326/140170750-8a2e33ad-6ffd-4659-9998-7df64e15d154.png)
 
-This project is a starting point for a Flutter application.
+เป็นหน้าที่เปิดแอพเข้ามาแล้วเจอเลย เพื่อเข้าสู่หน้าถัดไป
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+หน้าหมวดหมู่ 
+![image](https://user-images.githubusercontent.com/41279326/140170890-10393ce0-d284-4acb-8c13-45e7ae9931ab.png)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+- หน้านี้จะสามารถค้นหาชื่อของรายการอาหารที่ต้องการได้
+- มีการโปรโมทร้านอาหารส่วนลดและโปรโมชั่นต่างๆสามารถเลื่อนดูได้
+- ถัดมาเป็นหมวดหมู่ของรายการอาหาร ซึ่งสามารถกดเลือกได้ว่าต้องการดูอาหารประเภทอะไร เช่น เครื่องดื่ม อาหาร ของว่าง
+- ข้างล่างสุดเป็นเมนูอาหารยอดนิยมที่ลูกค้าชื่นชอบมากที่สุด
+
+
+หน้ารายการ 
+![image](https://user-images.githubusercontent.com/41279326/140171018-f01ef586-140a-4c35-8b8e-9d575162db3b.png)
+
+- หน้านี้จะสามารถค้นหาชื่อของรายการอาหารที่ต้องการได้
+- หลังจากเลือกหมวดหมู่ของรายการอาหารเสร็จแล้วก็จะแสดงรายการเมนูของหมวดหมู่ที่เลือก 
+- กดที่รูปเมนูเพื่อดูรายละเอียด ในหน้าถัดไป
+
+
+หน้ารายละเอียดอาหาร
+![image](https://user-images.githubusercontent.com/41279326/140171045-ddf02986-97af-41a8-847c-01b0a3e28c5c.png)
+
+- แสดงรายละเอียดเกี่ยวกับเมนูอาหาร
+- สามารถกดรูปหัวใจเมนูที่เราชื่นชอบ
+- สามารถดูรายละเอียดเกี่ยวกับเมนูอาหารถัดไปหรือที่ผ่านมาได้ โดยการกดปุ่มถัดไปหรือย้อนกลับ
