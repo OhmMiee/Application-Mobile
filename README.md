@@ -5,13 +5,15 @@
 4. 61020784 นายศรัณย์ ใจดี
 
 
-หน้าแรก 
+หน้าแรก
+
 ![image](https://user-images.githubusercontent.com/41279326/140170750-8a2e33ad-6ffd-4659-9998-7df64e15d154.png)
 
 เป็นหน้าที่เปิดแอพเข้ามาแล้วเจอเลย เพื่อเข้าสู่หน้าถัดไป
 
 
 หน้าหมวดหมู่ 
+
 ![image](https://user-images.githubusercontent.com/41279326/140170890-10393ce0-d284-4acb-8c13-45e7ae9931ab.png)
 
 
@@ -22,6 +24,7 @@
 
 
 หน้ารายการ 
+
 ![image](https://user-images.githubusercontent.com/41279326/140171018-f01ef586-140a-4c35-8b8e-9d575162db3b.png)
 
 - หน้านี้จะสามารถค้นหาชื่อของรายการอาหารที่ต้องการได้
@@ -30,6 +33,7 @@
 
 
 หน้ารายละเอียดอาหาร
+
 ![image](https://user-images.githubusercontent.com/41279326/140171045-ddf02986-97af-41a8-847c-01b0a3e28c5c.png)
 
 - แสดงรายละเอียดเกี่ยวกับเมนูอาหาร
