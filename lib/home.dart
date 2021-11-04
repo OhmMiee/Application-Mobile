@@ -231,10 +231,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Row(
                     children: [
                       _allCategories(
-                          image: 'assets/images/c_1.jpg',
+                          image: 'assets/images/c_2.jpg',
                           tittle: 'อาหาร'),
                       _allCategories(
-                          image: 'assets/images/c_2.jpg',
+                          image: 'assets/images/c_1.jpg',
                           tittle: 'เครื่องดื่ม'),
                       _allCategories(
                           image: 'assets/images/c_3.jpg',

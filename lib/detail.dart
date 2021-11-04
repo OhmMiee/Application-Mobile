@@ -25,8 +25,8 @@ class Information extends StatelessWidget {
           color: Color(0xFF262D34),
           image: DecorationImage(
             fit: BoxFit.cover,
-            image: Image.asset(
-              'assets/images/menu1.jpg',
+            image: Image.network(
+              'https://firebasestorage.googleapis.com/v0/b/food-f71b8.appspot.com/o/31503fd0f543fc98dfe556abb986ea5c.jpg?alt=media&token=6a8395b1-c823-4c94-b889-6b15bb2085da',
             ).image,
           ),
         ),

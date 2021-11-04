@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'constant.dart';
 import 'detail.dart';
 import 'home.dart';
+import 'dart:io';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:image_picker/image_picker.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 
 class CategoryPage extends StatelessWidget {
   const CategoryPage({Key? key}) : super(key: key);
@@ -62,7 +66,7 @@ class _MenuState extends State<Menu> {
                         topLeft: Radius.circular(20),
                         topRight: Radius.circular(20),
                       ),
-                      child: Image.asset(
+                      child: Image.network(
                         image,
                         width: 200,
                         height: 130,
@@ -114,17 +118,17 @@ class _MenuState extends State<Menu> {
                             scrollDirection: Axis.vertical,
                             children: [
                               _menu(
-                                  image: 'assets/images/latte.png',
-                                  tittle: "tittle"),
+                                  image: 'https://firebasestorage.googleapis.com/v0/b/food-f71b8.appspot.com/o/604270a2421922184c72a510ff54675e.jpg?alt=media&token=c5b64cec-e8b7-4971-b532-85273ac52c00',
+                                  tittle: "ชามะนาว"),
                               _menu(
-                                  image: 'assets/images/latte.png',
-                                  tittle: "tittle"),
+                                  image: 'https://firebasestorage.googleapis.com/v0/b/food-f71b8.appspot.com/o/31503fd0f543fc98dfe556abb986ea5c.jpg?alt=media&token=6a8395b1-c823-4c94-b889-6b15bb2085da',
+                                  tittle: "กีวี่โซดา"),
                               _menu(
-                                  image: 'assets/images/latte.png',
-                                  tittle: "tittle"),
+                                  image: 'https://firebasestorage.googleapis.com/v0/b/food-f71b8.appspot.com/o/6012b26ce662e2e6cfcffb65f14a9146.jpg?alt=media&token=78d3d387-1da9-47f0-badb-bfc35d50583f',
+                                  tittle: "ส้มโซดา"),
                               _menu(
-                                  image: 'assets/images/latte.png',
-                                  tittle: "tittle")
+                                  image: 'https://firebasestorage.googleapis.com/v0/b/food-f71b8.appspot.com/o/140abac0d3172a43ab5378a3e5c7eb99.jpg?alt=media&token=86fea632-1fc2-4a43-ad52-35d4f56d0005',
+                                  tittle: "ชาเขียว")
                             ]))
                   ])))
         ])));
