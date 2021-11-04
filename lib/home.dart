@@ -264,7 +264,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           image: "assets/images/menu1.jpg",
                           tittle: "Title"),
                       _menu(
-                          image: "assets/images/menu1.jpg",
+                          image: "assets/images/menu2.jpg",
                           tittle: "Title"),
                     ],
                   ),
